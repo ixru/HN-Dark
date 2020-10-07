@@ -1,0 +1,45 @@
+/* ==UserStyle==
+@name           hackernews dark
+@namespace      github.com/openstyles/stylus
+==/UserStyle== */
+
+@-moz-document domain("news.ycombinator.com") {
+body { background-color: #282828; } #hnmain { background-color: #222222; }
+
+/* reply area */
+  textarea {
+    background-color: #282828;
+    color: #ffffff;
+    border: 1px solid #000;
+  }
+  
+/* white links and text */ 
+  a:link, .morelink a:link, .comhead a:link, .pagetop a:visited, .comment .reply a:link {
+    color: #ffffff;
+  }
+
+/* slightly less white text for the comments and ask posts */
+  .c00, td {
+    color: #d9d9d9;
+  }
+  
+/* orange links */
+  .c00 a:link, .comhead a.togg {
+    color: #ff6600;
+  }
+  
+/* orange votearrow */
+  .votearrow {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  
+  border-bottom: 5px solid #ff6600;
+  background: none;
+  }
+  
+  .title {
+    font-size: 11pt;
+  }
+} 
